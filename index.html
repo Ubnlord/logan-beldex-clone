@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learning recreation of a CFD brokerage landing page layout. Original text paraphrased; all visuals rebuilt from scratch." />
+  <title>Logan Beldex — Learning Recreation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Logan Beldex home">
+        <span class="brand-mark" aria-hidden="true">LB</span>
+        <span class="brand-text">Logan <strong>Beldex</strong><small>Learning clone · for study only</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#markets">Markets</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#plans">Plans</a>
+        <a href="#converter">Converter</a>
+        <a href="#awards">Awards</a>
+        <a href="#stories">Stories</a>
+        <span class="nav-cta">
+          <a class="btn btn-ghost" href="#cta">Log in</a>
+          <a class="btn btn-solid" href="#plans">Register</a>
+        </span>
+      </nav>
+    </div>
+    <div class="ticker" aria-label="Market snapshot (illustrative)">
+      <div class="wrap ticker-track" id="tickerTrack"></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="section-label">CFD investing study layout</p>
+          <h1>Invest with vision.<br />Build for tomorrow.</h1>
+          <p class="lede">A clean, responsive recreation of a brokerage homepage: trade ideas across forex, crypto, indices and BDX with practice tools, clear pricing notes, and account tiers. Rebuilt from scratch for learning — no original assets reused.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#plans">View plans</a>
+            <a class="btn btn-outline" href="#platforms">Explore platforms</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>Execution</dt><dd>Illustrative instant fills</dd></div>
+            <div><dt>Pricing note</dt><dd>Zero-fee example layout</dd></div>
+            <div><dt>Leverage note</dt><dd>Up to 400:1 shown as study data</dd></div>
+          </dl>
+        </div>
+        <div class="hero-panel" aria-label="Illustrative trading panel">
+          <div class="panel-card">
+            <div class="panel-head">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="panel-title">Practice terminal</span>
+            </div>
+            <svg class="spark" viewBox="0 0 320 120" role="img" aria-label="Illustrative price line rising with dips">
+              <path d="M4 96 L40 88 L72 92 L104 70 L136 76 L168 54 L200 60 L232 38 L264 44 L316 14" fill="none" stroke-width="3" />
+              <circle cx="316" cy="14" r="5" />
+            </svg>
+            <div class="panel-row">
+              <div><small>BDX / USD</small><strong id="heroPrice">—</strong></div>
+              <div><small>24h change</small><strong class="up" id="heroChange">—</strong></div>
+              <div><small>Spread</small><strong>Illustrative</strong></div>
+            </div>
+            <div class="panel-buttons">
+              <button type="button" data-side="buy">Buy</button>
+              <button type="button" data-side="sell">Sell</button>
+            </div>
+            <p class="panel-note" id="panelNote" aria-live="polite">Paper-trading demo only. No real orders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conditions">
+      <div class="wrap conditions-grid">
+        <h2>Simple trading conditions</h2>
+        <ul>
+          <li><strong>Zero fees</strong><span>Example pricing row</span></li>
+          <li><strong>No commissions</strong><span>Kept as layout placeholder</span></li>
+          <li><strong>Up to 400:1</strong><span>Leverage figure from source page</span></li>
+          <li><strong>Fast execution</strong><span>Illustrative wording</span></li>
+        </ul>
+        <a class="btn btn-solid" href="#cta">Open a demo account</a>
+      </div>
+    </section>
+
+    <section class="section" id="markets">
+      <div class="wrap">
+        <p class="section-label">Markets</p>
+        <div class="section-head">
+          <h2>Four groups of instruments, one screen</h2>
+          <p>Categories mirror the reference homepage. Names and descriptions below are rewritten summaries, not the site's original marketing copy.</p>
+        </div>
+        <div class="market-grid">
+          <article class="market">
+            <h3>Forex</h3>
+            <p>Major and minor currency pairs with an emphasis on readable spreads and session hours.</p>
+            <span class="tag">Example: EUR/USD</span>
+          </article>
+          <article class="market">
+            <h3>Crypto</h3>
+            <p>Large-cap coins plus BDX, shown with a converter further down this page.</p>
+            <span class="tag">Example: BDX/USD</span>
+          </article>
+          <article class="market">
+            <h3>Indices</h3>
+            <p>Broad baskets that track regional equity performance through the day.</p>
+            <span class="tag">Example: IDX 100</span>
+          </article>
+          <article class="market">
+            <h3>BDX ecosystem</h3>
+            <p>The funding unit used across the plan tiers in the next section.</p>
+            <span class="tag">Funding unit: BDX</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="platforms">
+      <div class="wrap">
+        <p class="section-label">Platforms</p>
+        <div class="section-head">
+          <h2>Tools for different ways of trading</h2>
+          <p>The source page lists four product names. They are kept here as plain labels with fresh one-line summaries.</p>
+        </div>
+        <div class="platform-list">
+          <article>
+            <h3>CmfTradeGo <small>Mobile</small></h3>
+            <p>Compact phone layout for checking positions and placing basic orders.</p>
+          </article>
+          <article>
+            <h3>WebTrader <small>Browser</small></h3>
+            <p>Full charting workspace that runs without installing anything.</p>
+          </article>
+          <article>
+            <h3>CmfSocial <small>Copy</small></h3>
+            <p>Follow and compare strategy ideas shared by other demo users.</p>
+          </article>
+          <article>
+            <h3>CmfOptions <small>Contracts</small></h3>
+            <p>Short-duration contract view with fixed outcomes for practice.</p>
+          </article>
+        </div>
+        <div class="store-row" aria-label="App availability (illustrative)">
+          <span>Get the practice app:</span>
+          <span class="store-badge">Android demo</span>
+          <span class="store-badge">iOS demo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="wrap">
+        <p class="section-label">Account tiers</p>
+        <div class="section-head">
+          <h2>Seven funding bands, side by side</h2>
+          <p>Band names, funding ranges, returns and durations match the reference page's figures so you can compare layouts. Figures are study data, not an offer.</p>
+        </div>
+        <div class="plan-filter" role="group" aria-label="Filter plans by duration">
+          <button type="button" class="active" data-filter="all">All</button>
+          <button type="button" data-filter="short">Up to 2 months</button>
+          <button type="button" data-filter="long">1 year +</button>
+        </div>
+        <div class="plan-grid" id="planGrid">
+          <article class="plan" data-duration="short"><p class="plan-min">Min. funding <strong>4,000 BDX</strong></p><h3>GNS Plan</h3><ul><li>Deposit range: 4,000 – 10,000 BDX</li><li>Illustrated return: 1.90% ROI</li><li>Duration: 1 month</li></ul><a class="btn btn-outline" href="#cta">Choose GNS</a></article>
+          <article class="plan" data-duration="short"><p class="plan-min">Min. funding <strong>11,000 BDX</strong></p><h3>Build Up Plan</h3><ul><li>Deposit range: 11,000 – 16,000 BDX</li><li>Illustrated return: 2.51% ROI</li><li>Duration: 2 months</li></ul><a class="btn btn-outline" href="#cta">Choose Build Up</a></article>
+          <article class="plan" data-duration="short"><p class="plan-min">Min. funding <strong>17,000 BDX</strong></p><h3>Follow Up Plan</h3><ul><li>Deposit range: 17,000 – 30,000 BDX</li><li>Illustrated return: 3.92% ROI</li><li>Duration: 2 months</li></ul><a class="btn btn-outline" href="#cta">Choose Follow Up</a></article>
+          <article class="plan featured" data-duration="long"><p class="plan-min">Min. funding <strong>40,000 BDX</strong></p><h3>Apex Plan</h3><ul><li>Deposit range: 40,000 – 80,000 BDX</li><li>Illustrated return: 8.56% ROI</li><li>Duration: 1 year</li></ul><a class="btn btn-solid" href="#cta">Choose Apex</a></article>
+          <article class="plan" data-duration="long"><p class="plan-min">Min. funding <strong>90,000 BDX</strong></p><h3>Edifex Plan</h3><ul><li>Deposit range: 90,000 – 150,000 BDX</li><li>Illustrated return: 13.43% ROI</li><li>Duration: 2 years</li></ul><a class="btn btn-outline" href="#cta">Choose Edifex</a></article>
+          <article class="plan" data-duration="long"><p class="plan-min">Min. funding <strong>160,000 BDX</strong></p><h3>Dixon Plan</h3><ul><li>Deposit range: 160,000 – 220,000 BDX</li><li>Illustrated return: 15.43% ROI</li><li>Duration: 2 years</li></ul><a class="btn btn-outline" href="#cta">Choose Dixon</a></article>
+          <article class="plan" data-duration="long"><p class="plan-min">Min. funding <strong>220,000 BDX</strong></p><h3>Falcon Plan</h3><ul><li>Deposit range: 220,000 – 1,000,000 BDX</li><li>Illustrated return: 23.78% ROI</li><li>Duration: 5 years</li></ul><a class="btn btn-outline" href="#cta">Choose Falcon</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="converter">
+      <div class="wrap converter-grid">
+        <div>
+          <p class="section-label">Converter</p>
+          <h2>BDX to USD practice converter</h2>
+          <p>Static demo rate stored in <code>script.js</code>. Type an amount to see the conversion and the plan band it falls into.</p>
+          <div class="converter-card">
+            <label>Amount in BDX<input id="bdxInput" type="number" min="0" value="4000" inputmode="decimal" /></label>
+            <label>Demo rate (USD per BDX)<input id="rateInput" type="number" min="0" step="0.0001" value="0.0452" /></label>
+            <p class="converter-out">= <strong id="usdOut">$180.80</strong> <span id="bandOut">· GNS band</span></p>
+          </div>
+        </div>
+        <div class="awards" id="awards">
+          <h3>Press-style award row</h3>
+          <ul>
+            <li>Best Mobile Investing Platform</li>
+            <li>Most Trusted Investing Platform</li>
+            <li>Most Innovative CFD Broker</li>
+            <li>Best Fixed-Spread Broker</li>
+            <li>Best Online Broker</li>
+          </ul>
+          <p class="fine">Names mirror the reference page's award labels for layout study.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div class="wrap stories-grid">
+        <div>
+          <p class="section-label">Client stories</p>
+          <h2>You're in good company</h2>
+          <p>Two short invented quotes stand in for the long testimonial on the source page. No original review text is reproduced.</p>
+          <div class="quote-nav">
+            <button type="button" id="prevQuote" aria-label="Previous story">←</button>
+            <button type="button" id="nextQuote" aria-label="Next story">→</button>
+          </div>
+        </div>
+        <blockquote class="quote" id="quoteBox">
+          <p id="quoteText">“The demo layout made it easy to compare funding tiers before I read anything else.”</p>
+          <footer>— Practice user, <cite>study persona A</cite></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="wrap cta-inner">
+        <h2>Ready to practice the full flow?</h2>
+        <p>Create a free study account, pick a tier above, and try the converter with your own figures.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#top">Register now</a>
+          <a class="btn btn-outline" href="#markets">Revisit markets</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>Logan Beldex · study clone</strong>
+        <p>Unofficial recreation for learning HTML, CSS and JS. Not affiliated with the original site. Do not send funds or personal data.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#markets">Markets</a>
+        <a href="#plans">Plans</a>
+        <a href="#converter">Converter</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+    </div>
+    <p class="fine wrap">CFD trading involves substantial risk. This page is a layout exercise with illustrative numbers only.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
