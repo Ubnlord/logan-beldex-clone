@@ -5,7 +5,7 @@ yarn.lock
 pnpm-lock.yaml
 
 # Build outputs
-dist/
+# dist/
 build/
 .next/
 out/
@@ -20,7 +20,7 @@ out/
 .idea/
 *.swp
 *.swo
-*~
+*\~
 .DS_Store
 
 # Logs
@@ -37,3 +37,4 @@ pnpm-debug.log*
 
 # OS
 Thumbs.db
+EOF
